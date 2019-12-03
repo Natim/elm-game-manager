@@ -1,0 +1,106 @@
+buckets:
+  game-manager:
+    collections:
+      4a1d90ea-3683-460a-b75f-a0d30e988a28-documents:
+        data:
+          attachment:
+            enabled: true
+            required: false
+          cache_expires: 0
+          displayFields:
+          - title
+          id: 4a1d90ea-3683-460a-b75f-a0d30e988a28-documents
+          last_modified: 1575370306516
+          schema:
+            properties:
+              content:
+                description: Document content
+                title: Content
+                type: string
+              title:
+                description: Document title
+                title: Title
+                type: string
+            required:
+            - title
+            type: object
+          sort: -last_modified
+          uiSchema:
+            content:
+              ui:widget: textarea
+            ui:order:
+            - title
+            - content
+        records:
+          62b6ebd0-c439-4c0c-927e-38e0561514e4:
+            data:
+              content: "# Endroit\n\nNous t\u2019accueillerons dans les locaux d'Orange,\
+                \ 1 avenue de Belle Fontaine \xE0 Cesson-S\xE9vign\xE9."
+              id: 62b6ebd0-c439-4c0c-927e-38e0561514e4
+              last_modified: 1575370365926
+              schema: 1575370306516
+              title: Events
+            permissions: {}
+          b5017ab8-6b90-4fd3-80dc-f98fcc5ac98f:
+            data:
+              attachment:
+                filename: map.png
+                hash: 75d0445a3e4a0f47fec66a1b59cd8094c435fc998f4070330060008eddcc0915
+                location: 7473d7ef-b3ac-4b27-815c-ad2842f6d4a7.png
+                mimetype: image/png
+                size: 1657572
+              id: b5017ab8-6b90-4fd3-80dc-f98fcc5ac98f
+              last_modified: 1575370396262
+              schema: 1575370306516
+              title: "Plan d'acc\xE8s"
+            permissions: {}
+      games:
+        data:
+          attachment:
+            enabled: false
+            required: false
+          cache_expires: 0
+          displayFields:
+          - name
+          id: games
+          last_modified: 1575370155918
+          schema:
+            properties:
+              description:
+                description: Provide details about the game
+                title: Description
+                type: string
+              name:
+                description: Game name
+                title: Name
+                type: string
+            type: object
+          sort: -last_modified
+          uiSchema:
+            description:
+              ui:widget: textarea
+            ui:order:
+            - name
+            - description
+        records:
+          4a1d90ea-3683-460a-b75f-a0d30e988a28:
+            data:
+              description: Last day.
+              id: 4a1d90ea-3683-460a-b75f-a0d30e988a28
+              last_modified: 1575370205597
+              name: Alien
+              schema: 1575370155918
+            permissions: {}
+    data:
+      id: game-manager
+      last_modified: 1575369818055
+    groups:
+      admins:
+        data:
+          id: admins
+          last_modified: 1575369717493
+          members:
+            - auth0:foobar@yopmail.com
+    permissions:
+      write:
+      - /buckets/game-manager/groups/admins
