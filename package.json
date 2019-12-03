@@ -1,0 +1,12 @@
+{
+  "name": "elm-game-manager",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Natim/elm-game-manager.git",
+  "author": "cateland <axel.cateland@iadvize.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "elm-hot": "^1.1.4",
+    "node-elm-compiler": "^5.0.4"
+  }
+}
